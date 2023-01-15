@@ -7,7 +7,8 @@ const Project = () => {
     return (
         <div className="project">
             <h1>
-                This is page for project {projectId}.
+                Still working on it.
+                {/* This is page for project {projectId}. */}
             </h1>
         </div>
     )

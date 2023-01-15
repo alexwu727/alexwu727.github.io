@@ -4,7 +4,7 @@ const Experiences = () => {
     return (
         <div className="experiences">
             <h1>
-                This is page for experiences.
+                Still working on it.
             </h1>
         </div>
     )

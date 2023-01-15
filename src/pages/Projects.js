@@ -4,7 +4,7 @@ const Projects = () => {
     return (
         <div className="projects">
             <h1>
-                This is page for projects.
+                Still working on it.
             </h1>
         </div>
     )
