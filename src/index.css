@@ -35,3 +35,27 @@ code {
   color: #fff;
   border-bottom: 3px solid #fff;
 }
+
+.title {
+  margin: 30px 0px;
+  font-size: 50px;
+}
+
+.aboutMe {
+  margin-top: 50px;
+  display: flex;
+}
+
+.aboutMe p {
+  margin-top: 0px;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+#selfie {
+  border-radius: 20px;
+  width: 24vw;
+  height: 32vw;
+  object-fit: cover;
+  margin-left: 5%;
+}
