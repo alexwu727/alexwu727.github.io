@@ -4,7 +4,7 @@ const Projects = () => {
     return (
         <div className="projects">
             <h1>
-                Still working on it.
+                🚧🚧 Still working on it. 🚧🚧
             </h1>
         </div>
     )
