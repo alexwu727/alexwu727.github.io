@@ -5,9 +5,12 @@ import Layout from './pages/Layout';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Experiences from './pages/Experiences';
+import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Project from './pages/Project';
 import Error from './pages/Error';
+import ProjectsLayout from './pages/ProjectsLayout';
+import ExperiencesLayout from './pages/ExperiencesLayout';
 
 
 function App() {
@@ -20,9 +23,14 @@ function App() {
               <Route path="admin" element={<AboutMe />} />
               <Route path="about" element={<AboutMe />} />
               <Route path="contact" element={<Contact />} />
-              <Route path="experiences" element={<Experiences />} />
-              <Route path="projects" element={<Projects />} />
-              <Route path="projects/:projectId" element={<Project />} />
+              <Route path="experiences" element={<ExperiencesLayout />}>
+                <Route index element={<Experiences />} />
+                <Route path=":experienceId" element={<Experience />} />
+              </Route>
+              <Route path="projects" element={<ProjectsLayout />}>
+                <Route index element={<Projects />} />
+                <Route path=":projectId" element={<Project />} />
+              </Route>
               <Route path="/*" element={<Error />} />
             </Route>
           </Routes>

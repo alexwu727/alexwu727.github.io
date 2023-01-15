@@ -16,6 +16,7 @@ code {
   display: flex;
   justify-items: center;
   justify-content: space-between;
+  padding-top: 20px;
   height: 40px;
 }
 
@@ -31,9 +32,37 @@ code {
 }
 
 .navItem:hover,
-.active {
+.navbar .active {
   color: #fff;
   border-bottom: 3px solid #fff;
+}
+
+.projectsContainer,
+.experiencesContainer {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+}
+
+.sideItem {
+  padding-left: 10px;
+  width: 12vw;
+  text-align: left;
+  line-height: 3vw;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-size: calc(10px + 0.5vw);
+  color: #666;
+}
+
+.sideItem:hover,
+.sidebar .active {
+  color: #fff;
+  border-left: 3px solid #fff;
 }
 
 .title {
