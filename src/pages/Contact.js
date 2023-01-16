@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 
 const Contact = () => {
     return (
-        <div className="contact">
-            <h1>
-                🚧🚧 Still working on it. 🚧🚧
-            </h1>
+        <div>
+            <div className='title'>Contact</div>
+            <div className="contact">
+                <p>
+                    🚧🚧 Still working on it. 🚧🚧
+                </p>
+            </div>
         </div>
     )
 }

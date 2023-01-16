@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 
 
 const ExperiencesLayout = () => {
     return (
         <div>
-            <div className='title'> Experiences</div>
+            <Link to={'/experiences'} className='title'>Experiences</Link>
             <div className="experiencesContainer">
                 <Sidebar type={"experiences"} />
                 <Outlet />

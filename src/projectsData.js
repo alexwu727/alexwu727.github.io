@@ -1,8 +1,10 @@
 const projects = [
     {
         id: '1',
-        name: 'Project 1',
-        date: 'Jan 2023',
+        name: 'Calculator',
+        date: 'Dec 2022',
+        tech: 'React.js, Javascript',
+        url: 'https://github.com/alexwu727/calculator',
         content: 'project 1 is blah blah blah...'
     },
     {
