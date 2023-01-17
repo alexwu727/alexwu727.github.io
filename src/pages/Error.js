@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-const Error = () => {
+const Error = ({ msg = "page not found." }) => {
     return (
         <div className="error">
             <h1>
                 404
             </h1>
-            page not found
-            <Link to="/about"> back to about </Link>
+            <p>{msg}</p>
         </div>
     )
 }

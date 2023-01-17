@@ -1,14 +1,19 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import githubLogo from '../github-logo.png'
-const EducationCard = ({ item, type }) => {
+const EducationCard = ({ item }) => {
     return (
-        <Link to={`/${type}/${item.id}`} className="educationCard">
-            <h2>{item.name}</h2>
-            <div className='date'>{item.date}</div>
-            <p>Lorem ipsum dolor sit amet, praesent, consectetur adipiscing elit. Etiam non lectus et ligula aliquet sagittis dignissim vitae purus. </p>
-            <img src={githubLogo}></img>
-        </Link>
+        <div className="card educationCard" >
+            <div className='educationCardHeader'>
+                <div>
+                    <h3>{item.name}</h3>
+                    <div>{`${item.degree} in ${item.major}`}</div>
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", justifyContent: "flex-end" }}>
+                    <div>{item.date}</div>
+                    <div>{`GPA: ${item.gpa}/4.0`}</div>
+                </div>
+            </div>
+            <p>{item.content} </p>
+        </div>
     )
 }
 export default EducationCard

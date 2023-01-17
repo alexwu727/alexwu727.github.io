@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import githubLogo from '../github-logo.png'
-const WorkCard = ({ item, type }) => {
+import githubLogo from '../images/github-logo.png'
+const WorkCard = ({ item }) => {
     return (
-        <Link to={`/${type}/${item.id}`} className="workCard">
-            <h2>{item.name}</h2>
+        <Link to={`/experiences/${item.id}`} className="card">
+            <h3>{item.display}</h3>
             <div className='date'>{item.date}</div>
-            <p>Lorem ipsum dolor sit amet, praesent, consectetur adipiscing elit. Etiam non lectus et ligula aliquet sagittis dignissim vitae purus. </p>
-            <img src={githubLogo}></img>
+            <p>{item.description}</p>
+            {item.image && <img src={require(`../${item.image}`)}></img>}
         </Link>
     )
 }

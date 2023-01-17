@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink, Link } from "react-router-dom";
-import projects from '../projectsData';
-import experiences from '../experiencesData';
+import { NavLink } from "react-router-dom";
+import projects from '../data/projectsData';
+import experiences from '../data/experiencesData';
 const Sidebar = ({ type }) => {
     const items = type === "projects" ? projects : experiences.works;
     return (

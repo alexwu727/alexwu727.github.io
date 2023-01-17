@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ProjectCard from '../components/ProjectCard';
-import projects from '../projectsData';
+import projects from '../data/projectsData';
 
 const Projects = () => {
     return (
