@@ -45,11 +45,11 @@ code {
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 12vw;
+  width: 13vw;
 }
 
 .sideItem {
-  width: 12vw;
+  width: 13vw;
   padding-left: 10px;
   box-sizing: border-box;
   line-height: 3vw;
