@@ -1,5 +1,5 @@
 ## My personal website.
-
+[Alex Wu](https://alexwu727.github.io/)
 ### Use `gh-pages` to deploy react app.
 https://github.com/gitname/react-gh-pages
 
