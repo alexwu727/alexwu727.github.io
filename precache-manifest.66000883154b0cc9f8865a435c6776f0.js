@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "9a2e8e9e5d2acff73739",
+    "revision": "6397944d82ea098ff0e8",
     "url": "/static/css/main.81d3b4d9.chunk.css"
   },
   {
-    "revision": "9a2e8e9e5d2acff73739",
-    "url": "/static/js/main.eb60503b.chunk.js"
+    "revision": "6397944d82ea098ff0e8",
+    "url": "/static/js/main.2756a878.chunk.js"
   },
   {
-    "revision": "1a05f9e8f65039a85012",
-    "url": "/static/js/runtime~main.a5b0edf4.js"
+    "revision": "0c12043731dafe44a697",
+    "url": "/static/js/runtime~main.ed71d39f.js"
   },
   {
-    "revision": "3ceed754710499919d9d",
-    "url": "/static/js/2.93663647.chunk.js"
+    "revision": "c935349b394b0d097a9b",
+    "url": "/static/js/2.763c4952.chunk.js"
   },
   {
-    "revision": "a1523ecc2a9189979536",
-    "url": "/static/js/3.6c78ee36.chunk.js"
+    "revision": "856c49ae3b9a7cba1dfe",
+    "url": "/static/js/3.3dbdecd1.chunk.js"
   },
   {
     "revision": "48380c60710c937d337c7c669a7e5787",
@@ -26,6 +26,10 @@ self.__precacheManifest = [
   {
     "revision": "8c589481df20287f7793c905e540915f",
     "url": "/static/media/selfie.8c589481.jpg"
+  },
+  {
+    "revision": "202fa97fe2cf3838fb38814876a5b606",
+    "url": "/static/media/academiaSinica.202fa97f.jpg"
   },
   {
     "revision": "820576e24bfc4edd2068dfc831615bb5",
@@ -48,7 +52,7 @@ self.__precacheManifest = [
     "url": "/static/media/tetraStar.33a90ac2.png"
   },
   {
-    "revision": "1f101f816628c53d85b841ec7757f3fc",
+    "revision": "f59bd68f493f96587b8ebfeec4cff924",
     "url": "/index.html"
   }
 ];
