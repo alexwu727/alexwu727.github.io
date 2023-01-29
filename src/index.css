@@ -81,7 +81,7 @@ code {
 
 p {
   margin-top: 0px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5em;
 }
 
@@ -95,14 +95,17 @@ p {
 .card {
   width: 45%;
   margin-bottom: 30px;
+  padding: 5px 10px;
   text-decoration: none;
   color: #fff;
+  border-radius: 5px;
 }
 
 .card img {
   width: 100%;
   height: 15vw;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .card p {
@@ -147,16 +150,12 @@ p {
 }
 
 .techContainer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.techContainer {
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
   height: 32px;
   line-height: 32px;
+  margin-bottom: 10px;
 }
 
 .techSection {
@@ -175,6 +174,28 @@ p {
   margin-right: 10px;
 }
 
+.relatedProjects {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.relatedProject {
+  padding: 20px;
+  margin: 10px 0px;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.contact a:hover,
+.card:hover,
+.relatedProject:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 
 #selfie {
   border-radius: 20px;
@@ -184,6 +205,42 @@ p {
   margin-left: 5%;
 }
 
-#githubLogo {
+.icon {
   width: 32px;
+}
+
+.contact p {
+  font-size: 28px;
+}
+
+.contact li {
+  display: flex;
+  margin: 20px 0px;
+  list-style-type: none;
+  font-size: 24px;
+  text-decoration: none;
+  height: 32px;
+  line-height: 32px;
+}
+
+.contact a {
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contact .icon {
+  margin-right: 10px;
+}
+
+.contact .item {
+  width: 100%;
+  display: flex;
+}
+
+.contact .key {
+  width: 15%;
+}
+
+.contact .value {
+  padding: 2px;
 }

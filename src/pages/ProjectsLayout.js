@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 
-
 const ProjectsLayout = () => {
     return (
         <div>

@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import projects from '../data/projectsData';
 import Error from './Error';
-import githubLogo from '../images/github-logo.png'
+import githubLogo from '../images/icons/github.png'
+import ReactMarkdown from 'react-markdown';
 const Project = () => {
     const { projectId } = useParams();
     const project = projects.find((project) => project.id === projectId);
@@ -22,9 +23,13 @@ const Project = () => {
                     </div>
                 }
                 {
-                    project.url && <a href={project.url}><img src={githubLogo} id="githubLogo" /></a>
+                    project.url && <a href={project.url}><img src={githubLogo} className="icon" /></a>
                 }
             </div>
+            {
+                project.markdown && <ReactMarkdown source={project.markdown} />
+            }
+
             {project.paragraphs.map((paragraph) => {
                 return (
                     <p>{paragraph}</p>

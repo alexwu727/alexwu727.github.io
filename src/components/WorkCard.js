@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import githubLogo from '../images/github-logo.png'
 const WorkCard = ({ item }) => {
     return (
         <Link to={`/experiences/${item.id}`} className="card">
