@@ -6,6 +6,7 @@ const projects = [
         image: 'images/chineseNewYear.jpg',
         description: 'A helper website for Chinese New Year Party Game!',
         tech: 'React.js, Javascript',
+        url: 'https://github.com/alexwu727/party-game-helper',
         paragraphs: [
             'As a developer, I recently had the opportunity to put my skills to the test by creating a series of party games for the Chinese New Year. I grouped players together and had them compete against each other in a total of five challenges, with the team with the highest score winning a prize at the end.',
             'To bring this project to life, I used React to create a website that helped me manage the different aspects of the game, such as playing audio files, generating questions, and displaying them on screen. One of the challenges I designed was a game in which players had to guess the song that the lyrics were being spoken by Google Translate. This particular challenge required me to use an API that allowed me to retrieve mp3 files.',
