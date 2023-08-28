@@ -8,7 +8,7 @@ const Sidebar = ({ type }) => {
         <div className='sidebar'>
             {items.map((item) => {
                 return (
-                    <NavLink to={`/${type}/${item.id}`} className='sideItem'> {item.name} </NavLink>
+                    <NavLink key={item.id} to={`/${type}/${item.id}`} className='sideItem'> {item.name} </NavLink>
                 );
             })}
         </div>

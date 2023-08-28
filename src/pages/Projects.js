@@ -14,7 +14,7 @@ const Projects = () => {
             <div className='cardsContainer'>
                 {projects.map((project) => {
                     return (
-                        <ProjectCard item={project} type={"projects"} />
+                        <ProjectCard key={project.id} item={project} type={"projects"} />
                     );
                 })}
             </div>
