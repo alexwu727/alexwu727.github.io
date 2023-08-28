@@ -6,6 +6,7 @@ const projects = [
         image: 'images/chineseNewYear.jpg',
         description: 'A helper website for Chinese New Year Party Game!',
         tech: 'React.js, Javascript',
+        markdown: 'party_game.md',
         url: 'https://github.com/alexwu727/party-game-helper',
         paragraphs: [
             'As a developer, I recently had the opportunity to put my skills to the test by creating a series of party games for the Chinese New Year. I grouped players together and had them compete against each other in a total of five challenges, with the team with the highest score winning a prize at the end.',
@@ -20,6 +21,7 @@ const projects = [
         image: 'images/selfie.jpg',
         description: 'My personal website which includes experiences and projects.',
         tech: 'React.js, Javascript, Figma',
+        markdown: 'personal_website.md',
         url: 'https://github.com/alexwu727/alexwu727.github.io',
         paragraphs: [
             'My personal website is built using React. To deploy the website, I used the gh-pages dependency, which made it easy to build and publish the site to GitHub Pages.',
@@ -35,6 +37,7 @@ const projects = [
         image: 'images/calculator.jpg',
         description: 'A simple calculator web application using React.',
         tech: 'React.js, Javascript',
+        markdown: 'calculator.md',
         url: 'https://github.com/alexwu727/calculator',
         paragraphs: [
             'In this project, I created a simple calculator web application using React. The calculator has the basic features of addition, subtraction, multiplication, division, decimal point, percentage, and the ability to invert positive and negative numbers. This was my first time using React and I found it to be a great learning experience.',
@@ -50,6 +53,7 @@ const projects = [
         image: 'images/tetraStar.png',
         description: 'Tetra-Star Simulation is a game-like simulation project.',
         tech: 'Java',
+        markdown: 'tetra_star.md',
         url: 'https://github.com/alexwu727/Tetra-Star-Simulation',
         paragraphs: [
             'The simulation is of a scenario of events that take place on a distant planet, Tetra. The planet Tetra is inhabited by TetRovers. TetRovers are generally peaceable people who love to explore and see “what is out there” in the universe. Therefore, TetRovers value “StarMaps” which contain many secrets to the distant galaxies in the universe and were written a long time ago by their ancestors.',
@@ -72,6 +76,7 @@ const projects = [
         image: 'images/flask.webp',
         description: 'This is a RESTful API built with Flask, designed for a store system\'s backend.',
         tech: 'Python, Flask, Docker, PostgreSQL, Redis',
+        markdown: 'stores_backend.md',
         url: 'https://github.com/alexwu727/flaskApp',
         paragraphs: [
             "In this project, I built a RESTful API using Python and Flask. I utilized Docker to containerize the application, and utilized PostgreSQL as the database. I also integrated user authentication using JSON Web Tokens (JWT). The API allows for the creation, read, update, and deletion of different store locations, products, and users. To handle the high volume of requests, I incorporated a task queue using Redis. Finally, I deployed the API to Render for public access.",
@@ -87,6 +92,7 @@ const projects = [
         image: 'images/cardFlipGame.jpg',
         description: 'This is a simple card-matching game developed using C++ and Qt.',
         tech: 'C++, Qt',
+        markdown: 'card_flip_game.md',
         url: 'https://github.com/alexwu727/cardFlipGame',
         paragraphs: [
             "Our team has developed a simple card matching game for our OOP course final project. The game is designed for two players, who take turns flipping cards in order to match pairs and earn points. One of the key features of our game is the use of OOP concepts, such as inheritance and encapsulation. We have implemented three classes: Player, Card, and Board. The Player class manages the players' scores and turn-taking, the Card class handles the individual card functionality, and the Board class manages the game board and the overall flow of the game. By utilizing OOP, we were able to create a structured and organized codebase, which made it easier to add new features and debug any issues. The game also allows for easy modification and expansion in the future. Our team is proud of the final outcome of the game and it has been a great learning experience for us to apply the knowledge of OOP in this project.",
@@ -101,6 +107,7 @@ const projects = [
         image: 'images/androidStudio.png',
         description: 'IQ Booster is a knowledge sharing app using Android Studio.',
         tech: 'Java, Android Studio, Firebase',
+        markdown: 'iq_booster.md',
         url: 'https://github.com/zawinglee/IQBooster',
         paragraphs: [
             "IQ Booster is a mobile app that aims to provide users with a platform for sharing and acquiring new knowledge. Our app includes a variety of features to enhance the user experience and make it easy for people to connect and share information.",
@@ -119,6 +126,7 @@ const projects = [
         image: 'images/networkProtocols.png',
         description: 'Designed a protocol on top of UDP protocol for implementing communications between clients and servers using C.',
         tech: 'C, Socket',
+        markdown: 'customized_protocol.md',
         url: 'https://github.com/alexwu727/Customized-Protocol/',
         paragraphs: [
             "In this project, I was tasked with creating a customized protocol on top of UDP for a client-server communication system. The system consisted of two main parts: the client and the server. The client would send packets to the server, and the server would acknowledge the receipt of each packet with ACKs.",
@@ -134,6 +142,7 @@ const projects = [
         image: 'images/log.webp',
         description: 'Implementing Log Data Consumer with Apache Kafka and Vert.x.',
         tech: 'Java, Vert.x, Apache Kafka, Cassandra',
+        markdown: 'log_consumer.md',
         url: 'https://github.com/alexwu727/kafka-vert.x-cassandra-practice',
         paragraphs: [
             'During my internship at Aiello Ai, I had the opportunity to work on a project that aimed to analyze customer experience and enhance business strategy. My role as a data analyst involved the collection, cleaning, and analysis of log data using Apache Kafka queue.',
@@ -148,6 +157,7 @@ const projects = [
         image: 'images/apiGateway.png',
         description: 'Optimizing RESTful API Performance with Java Vert.x.',
         tech: 'Java, Vert.x, ',
+        markdown: 'api_gateway.md',
         url: 'https://github.com/alexwu727/intern-partialAPI',
         paragraphs: [
             'During my internship at Aiello Ai, I had the opportunity to work on a project that aimed to enhance the company\'s RESTful API\'s availability, flexibility, and scalability. My role as a software engineer involved restructuring the API and building an entire skeleton that met OpenAPI specifications using Java Vert.x.',

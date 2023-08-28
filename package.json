@@ -7,18 +7,17 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.2.5",
+    "axios": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-markdown": "^8.0.5",
+    "react-markdown": "^8.0.7",
     "react-scripts": "^2.1.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "node-options": "export NODE_OPTIONS=--openssl-legacy-provider",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "npm run node-options && react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -44,6 +43,7 @@
   "devDependencies": {
     "gh-pages": "^4.0.0",
     "raw-loader": "^4.0.2",
+    "react-app-rewired": "^2.2.1",
     "react-router-dom": "^6.6.2"
   }
 }

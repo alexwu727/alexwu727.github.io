@@ -29,7 +29,7 @@ const works = [
         date: 'June 2022 - August 2022',
         image: 'images/poshmark.webp',
         tech: 'Ruby, Trinidad, Puma, Log4j2, Python, Shell script',
-        markdown: './data/md/Poshmark.md',
+        markdown: 'poshmark.md',
         description: 'I worked on the core-infrastructure team for Poshmark, a marketplace for clothing, shoes, and accessories. My role was to migrate the server and deploy it.',
         paragraphs: [
             'When I was in Poshmark, I worked in the core infrastructure team. We use Trinidad as our web server. It is not well-maintained, the last release is about 7 years ago. This may cause the server is not compatible while new tech comes in. Thus, to increase the reliability, we found that Puma is suitable in our situation. It is simple and fast. Most importantly, it has been updated lately and its community is active these days. My task is refactoring our JRuby application. I started Puma server, immigrate the configurations, implement log features, deploy to the docker cluster, and run the performance test at the end. The server works well and the performance is 20% faster than the previous one.',
@@ -49,6 +49,7 @@ const works = [
         date: 'January 2021 - March 2021',
         image: 'images/aiello.jpeg',
         tech: 'Java, Vert.x, Apache Kafka',
+        markdown: 'aiello.md',
         description: 'During my internship at Aiello Ai, I worked to improve the company\'s API infrastructure.',
         paragraphs: [
             'During my internship at Aiello Ai, I had the opportunity to work as a software engineer and enhance the company\'s RESTful API\'s availability, flexibility, and scalability by restructuring the API and building an entire skeleton that met OpenAPI specifications using Java Vert.x.',
@@ -64,9 +65,10 @@ const works = [
         employer: 'Academia Sinica',
         position: 'Software Engineer Intern',
         display: 'Software Engineer Intern at Academia Sinica',
-        tech: 'Python, R',
         date: 'July 2018 - June 2019',
         image: 'images/academiaSinica.jpg',
+        tech: 'Python, R',
+        markdown: 'academiaSinica_1.md',
         description: 'At Academia Sinica, Taiwan\'s top research institution, we developed a system to automate data entry, reducing costs.',
         paragraphs: [
             'During my internship at Academia Sinica, I had the opportunity to work as a software engineer intern on a project aimed at improving the efficiency of data collection for research studies. The main issue we faced was that a lot of time was spent manually inputting subjects\' answers to questionnaires into a database.',
@@ -81,9 +83,10 @@ const works = [
         employer: 'Academia Sinica',
         position: 'Data Analyst (Contract)',
         display: 'Data Analyst (Contract) at Academia Sinica',
-        tech: 'Python, R',
         date: 'July 2020 - August 2021',
         image: 'images/academiaSinica.jpg',
+        tech: 'Python, R',
+        markdown: 'academiaSinica_2.md',
         description: 'Uncovering patterns in criminal networks through data analysis.',
         paragraphs: [
             'I had the opportunity to work on a project as a data analyst for a researcher at the Sinica Academia. The project focused on studying criminal networks and my role was to assist in the construction and analysis of a large social network.',

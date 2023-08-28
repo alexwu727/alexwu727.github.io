@@ -5,6 +5,7 @@ import projects from '../data/projectsData';
 import Error from './Error';
 import githubLogo from '../images/icons/github.png'
 import { Link } from 'react-router-dom';
+import Markdown from '../components/Markdown.jsx';
 
 const Experience = () => {
     const { experienceId } = useParams();
@@ -43,6 +44,7 @@ const Experience = () => {
                     experience.url && <a href={experience.url}><img src={githubLogo} className="icon" /></a>
                 }
             </div>
+            <Markdown key={experience.id} filePath={experience.markdown} />
             {experience.paragraphs.map((paragraph) => {
                 return (
                     <p>{paragraph}</p>

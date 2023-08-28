@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import projects from '../data/projectsData';
 import Error from './Error';
 import githubLogo from '../images/icons/github.png'
-import ReactMarkdown from 'react-markdown';
+import Markdown from '../components/Markdown.jsx';
 const Project = () => {
     const { projectId } = useParams();
     const project = projects.find((project) => project.id === projectId);
@@ -26,9 +26,7 @@ const Project = () => {
                     project.url && <a href={project.url}><img src={githubLogo} className="icon" /></a>
                 }
             </div>
-            {
-                project.markdown && <ReactMarkdown source={project.markdown} />
-            }
+            <Markdown key={project.id} filePath={project.markdown} />
 
             {project.paragraphs.map((paragraph) => {
                 return (
