@@ -2,6 +2,7 @@ import React from 'react';
 import EducationCard from '../components/EducationCard';
 import WorkCard from '../components/WorkCard';
 import experiences from '../data/experiencesData';
+import ToTheTopButton from '../components/ToTheTopButton';
 const Experiences = () => {
     const educations = experiences.educations
     const works = experiences.works
@@ -29,6 +30,7 @@ const Experiences = () => {
                     );
                 })}
             </div>
+            <ToTheTopButton />
         </div>
     )
 }

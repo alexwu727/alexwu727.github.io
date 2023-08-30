@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 import projects from '../data/projectsData';
+import ToTheTopButton from '../components/ToTheTopButton';
 
 const Projects = () => {
     return (
@@ -18,6 +19,7 @@ const Projects = () => {
                     );
                 })}
             </div>
+            <ToTheTopButton />
         </div>
     )
 }
