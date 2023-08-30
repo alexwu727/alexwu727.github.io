@@ -45,11 +45,6 @@ const Experience = () => {
                 }
             </div>
             <Markdown key={experience.id} filePath={experience.markdown} />
-            {experience.paragraphs.map((paragraph) => {
-                return (
-                    <p>{paragraph}</p>
-                );
-            })}
             {renderRelatedProjects()}
         </div>
     )
