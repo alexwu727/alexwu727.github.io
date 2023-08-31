@@ -14,7 +14,7 @@ const Markdown = ({ filePath }) => {
             });
     }, []);
     return (
-        <ReactMarkdown>{markdown}</ReactMarkdown>
+        <ReactMarkdown className='md'>{markdown}</ReactMarkdown>
     )
 }
 
