@@ -1,7 +1,13 @@
 .App {
   color: #fff;
-  background-color: #282c34;
+  background: linear-gradient(180deg, #071e26 0%, #010b16 500px, #03101f 100%), linear-gradient(90deg, #bad0d7 0%, #816956 500px, #010b16 100%);
 }
+
+/* 
+background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+ */
 
 .container {
   min-height: 100vh;
