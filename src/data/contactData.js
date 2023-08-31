@@ -1,11 +1,5 @@
 const contacts = [
     {
-        key: 'Mobile',
-        value: '(408)386-2829',
-        isLink: false,
-        icon: 'mobile.png'
-    },
-    {
         key: 'Email',
         value: 'alexwu727@gmail.com',
         isLink: false,
