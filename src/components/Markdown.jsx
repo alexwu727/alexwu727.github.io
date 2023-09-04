@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ReactMarkdown from "react-markdown";
+import { Typography } from '@mui/material';
 // This component reads the markdown file and renders it.
 // It will be used in the Article component.
 // The file is passed as a prop, the format is a string of the path to the file.
@@ -14,7 +15,9 @@ const Markdown = ({ filePath }) => {
             });
     }, []);
     return (
-        <ReactMarkdown className='md'>{markdown}</ReactMarkdown>
+        <Typography color="primary">
+            <ReactMarkdown className='md'>{markdown}</ReactMarkdown>
+        </Typography>
     )
 }
 

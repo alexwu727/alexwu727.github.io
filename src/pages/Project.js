@@ -2,38 +2,66 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import projects from '../data/projectsData';
 import Error from './Error';
-import githubLogo from '../images/icons/github.png'
+import githubWhite from '../images/icons/github_white.png'
+import githubBlack from '../images/icons/github_black.png'
 import Markdown from '../components/Markdown.jsx';
+import { Box, IconButton, Link as MuiLink, Typography, useTheme } from '@mui/material';
+
 const Project = () => {
+    const theme = useTheme();
+    var githubLogo;
+    if (theme.palette.mode === 'dark') {
+        githubLogo = githubWhite;
+    } else {
+        githubLogo = githubBlack;
+    }
     const { projectId } = useParams();
     const project = projects.find((project) => project.id === projectId);
     if (!project) {
         return (<Error msg={`Project id ${projectId} not found.`} />)
     }
     return (
-        <div className="project">
-            <h1>{project.name}</h1>
-            <div className='date'>{project.date}</div>
-            <div className='techContainer'>
+        <Box className="project">
+            <Typography variant='h1'>{project.name}</Typography>
+            <Typography className='date'>{project.date}</Typography>
+            <Box
+                sx={{
+                    marginTop: '5px',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    height: '32px',
+                    lineHeight: '32px',
+                    marginBottom: '10px',
+                }}
+            >
+                <Box
+                    sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                    }}
+                >
+                    <Typography variant='body2' className='techTag'> tech </Typography>
+                    <Typography variant='body2'> {project.tech} </Typography>
+                </Box>
                 {
-                    project.tech &&
-                    <div className='techSection'>
-                        <div> tech </div>
-                        {project.tech}
-                    </div>
+                    project.url &&
+                    <IconButton
+                        component={MuiLink}
+                        href={project.url}
+                        width='32px'
+                    >
+                        <img src={githubLogo} width='100%' alt='github logo' />
+                    </IconButton>
                 }
-                {
-                    project.url && <a href={project.url}><img src={githubLogo} className="icon" /></a>
-                }
-            </div>
+            </Box>
             <Markdown key={project.id} filePath={project.markdown} />
 
             {project.paragraphs.map((paragraph) => {
                 return (
-                    <p>{paragraph}</p>
+                    <Typography className='withMargin'>{paragraph}</Typography>
                 );
             })}
-        </div>
+        </Box>
 
     )
 }

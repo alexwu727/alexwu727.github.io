@@ -6,6 +6,7 @@ import Error from './Error';
 import githubLogo from '../images/icons/github.png'
 import { Link } from 'react-router-dom';
 import Markdown from '../components/Markdown.jsx';
+import { Box, Button, IconButton, Link as MuiLink, Typography, } from '@mui/material';
 
 const Experience = () => {
     const { experienceId } = useParams();
@@ -16,37 +17,71 @@ const Experience = () => {
     const renderRelatedProjects = () => {
         if (experience.projects)
             return (
-                <div>
-                    <h2>Relate Projects</h2>
-                    <div className='relatedProjects'>
+                <Box>
+                    <Typography variant='h2'>Relate Projects</Typography>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            marginBottom: '50px',
+                            gap: '10px',
+                        }}
+                    >
                         {experience.projects.map((projectId) => {
                             const project = projects.find((project) => project.id === projectId);
                             return (
-                                <Link to={`/projects/${projectId}`} className='relatedProject'>{project.name}</Link>
+                                <Button
+                                    key={projectId}
+                                    component={Link}
+                                    to={`/projects/${projectId}`}
+                                    variant='outlined'
+                                >
+                                    {project.name}
+                                </Button>
                             );
                         })}
-                    </div>
-                </div>
+                    </Box>
+                </Box>
             )
         return null;
     }
 
     return (
-        <div className="experience">
-            <h1>{experience.display}</h1>
-            <div className='date'>{experience.date}</div>
-            <div className='techContainer'>
-                <div className='techSection'>
-                    <div> tech </div>
-                    {experience.tech}
-                </div>
+        <Box>
+            <Typography variant='h1'>{experience.display}</Typography>
+            <Typography className='date'>{experience.date}</Typography>
+            <Box
+                sx={{
+                    marginTop: '5px',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    height: '32px',
+                    lineHeight: '32px',
+                    marginBottom: '10px',
+                }}
+            >
+                <Box
+                    sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                    }}
+                >
+                    <Typography variant='body2' className='techTag'> tech </Typography>
+                    <Typography variant='body2'> {experience.tech} </Typography>
+                </Box>
                 {
-                    experience.url && <a href={experience.url}><img src={githubLogo} className="icon" /></a>
+                    experience.url &&
+                    <IconButton
+                        component={MuiLink}
+                        href={experience.url}
+                        width='32px'
+                    >
+                        <img src={githubLogo} width='100%' alt='github logo' />
+                    </IconButton>
                 }
-            </div>
+            </Box>
             <Markdown key={experience.id} filePath={experience.markdown} />
             {renderRelatedProjects()}
-        </div>
+        </Box>
     )
 }
 export default Experience

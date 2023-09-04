@@ -1,16 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
+import { Box, Typography } from '@mui/material';
 
 const ProjectsLayout = () => {
     return (
-        <div>
-            <Link to={"/projects"} className='title'>Projects</Link>
-            <div className="projectsContainer">
+        <Box>
+            <Typography
+                component={Link}
+                to={'/projects'}
+                variant='h1'
+                className='pageTitle'
+            >
+                Projects
+            </Typography>
+            <Box display='flex'>
                 <Sidebar type={"projects"} />
                 <Outlet />
-            </div>
-        </div>
+            </Box>
+        </Box>
     )
 }
 export default ProjectsLayout

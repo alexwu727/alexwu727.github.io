@@ -2,6 +2,7 @@ const projects = [
     {
         id: '10',
         name: 'Party Game',
+        display: 'Party Game',
         date: 'Jan 2023',
         image: 'images/chineseNewYear.jpg',
         description: 'A helper website for Chinese New Year Party Game!',
@@ -17,6 +18,7 @@ const projects = [
     {
         id: '9',
         name: 'Personal Website',
+        display: 'Personal Website',
         date: 'Jan 2023',
         image: 'images/selfie.jpg',
         description: 'My personal website which includes experiences and projects.',
@@ -33,6 +35,7 @@ const projects = [
     {
         id: '8',
         name: 'Calculator',
+        display: 'Calculator',
         date: 'Dec 2022',
         image: 'images/calculator.jpg',
         description: 'A simple calculator web application using React.',
@@ -49,6 +52,7 @@ const projects = [
     {
         id: '7',
         name: 'Tetra-Star',
+        display: 'Tetra-Star Simulation',
         date: 'Dec 2022',
         image: 'images/tetraStar.png',
         description: 'Tetra-Star Simulation is a game-like simulation project.',
@@ -72,6 +76,7 @@ const projects = [
     {
         id: '6',
         name: 'Stores Backend',
+        display: 'Stores Backend',
         date: 'Dec 2022',
         image: 'images/flask.webp',
         description: 'This is a RESTful API built with Flask, designed for a store system\'s backend.',
@@ -88,6 +93,7 @@ const projects = [
     {
         id: '5',
         name: 'Card Flip Game',
+        display: 'Card Flip Game',
         date: 'March 2022',
         image: 'images/cardFlipGame.jpg',
         description: 'This is a simple card-matching game developed using C++ and Qt.',
@@ -103,6 +109,7 @@ const projects = [
     {
         id: '4',
         name: 'IQ Booster',
+        display: 'IQ Booster',
         date: 'Dec 2021',
         image: 'images/androidStudio.png',
         description: 'IQ Booster is a knowledge sharing app using Android Studio.',
@@ -122,6 +129,7 @@ const projects = [
     {
         id: '3',
         name: 'Customized Protocol',
+        display: 'Customized Protocol',
         date: 'Dec 2021',
         image: 'images/networkProtocols.png',
         description: 'Designed a protocol on top of UDP protocol for implementing communications between clients and servers using C.',
@@ -138,6 +146,7 @@ const projects = [
     {
         id: '2',
         name: 'Log Consumer',
+        display: 'Log Consumer',
         date: 'March 2021',
         image: 'images/log.webp',
         description: 'Implementing Log Data Consumer with Apache Kafka and Vert.x.',
@@ -153,6 +162,7 @@ const projects = [
     {
         id: '1',
         name: 'API Gateway',
+        display: 'API Gateway',
         date: 'Feb 2021',
         image: 'images/apiGateway.png',
         description: 'Optimizing RESTful API Performance with Java Vert.x.',

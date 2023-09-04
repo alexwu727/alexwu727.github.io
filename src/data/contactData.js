@@ -3,35 +3,35 @@ const contacts = [
         key: 'Email',
         value: 'alexwu727@gmail.com',
         isLink: false,
-        icon: 'mail.png'
+        icon: 'mail'
     },
     {
         key: 'Facebook',
         value: 'https://www.facebook.com/alexwu727',
         isLink: true,
         display: "Hengyu Wu (Alex)",
-        icon: 'facebook.png'
+        icon: 'facebook'
     },
     {
         key: 'LinkedIn',
         value: 'https://www.linkedin.com/in/hengyu-wu/',
         isLink: true,
         display: "Heng-Yu (Alex) Wu",
-        icon: 'linkedin.png'
+        icon: 'linkedin'
     },
     {
         key: 'GitHub',
         value: 'https://github.com/alexwu727',
         isLink: true,
         display: "Alex Wu",
-        icon: 'github.png'
+        icon: 'github'
     },
     {
         key: 'LeetCode',
         value: 'https://leetcode.com/alexwu727/',
         isLink: true,
         display: "Alex Wu",
-        icon: 'leetcode.png'
+        icon: 'leetcode'
     },
 ];
 

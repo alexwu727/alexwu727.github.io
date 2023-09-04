@@ -1,14 +1,40 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import SwitchModeButton from './SwitchModeButton';
+import { Box } from '@mui/material';
+import NavItem from './NavItem';
 
 const Navbar = () => {
     return (
-        <div className="navbar">
-            <NavLink to="/about" className='navItem'> About me </NavLink>
-            <NavLink to="/experiences" className='navItem'> Experience </NavLink>
-            <NavLink to="/projects" className='navItem'> Projects </NavLink>
-            <NavLink to="/contact" className='navItem'> Contact </NavLink>
-        </div>
+        <Box
+            sx={{
+                paddingTop: '20px',
+                display: 'flex',
+                justifyContent: 'space-between',
+                gap: '20px',
+            }}
+        >
+            <Box
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    flexGrow: 1
+                }}
+            >
+
+                <NavItem to="/about">About me</NavItem>
+                <NavItem to="/experiences">Experience</NavItem>
+                <NavItem to="/projects">Projects</NavItem>
+                <NavItem to="/contact">Contact</NavItem>
+            </Box>
+            <SwitchModeButton />
+        </Box>
+        // .navbar {
+        //     display: flex;
+        //     justify-items: center;
+        //     justify-content: space-between;
+        //     padding-top: 20px;
+        //     height: 40px;
+        //   }
     )
 }
 export default Navbar
