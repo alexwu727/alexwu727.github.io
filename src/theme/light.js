@@ -15,6 +15,10 @@ const lightTheme = {
             default: "#ffffe9",
             paper: "#eeeeee",
         },
+        horizontalLine: {
+            left: "linear-gradient(90deg, #14213dff 0%, #14213d00 80%)",
+            right: "linear-gradient(270deg, #14213dff 0%, #14213d00 80%)",
+        },
     },
     typography: {
         h1: {
@@ -32,7 +36,6 @@ const lightTheme = {
             color: "#14213d",
             fontSize: "30px",
             fontWeight: "700",
-            marginBottom: "10px",
         },
         h3: {
             color: "#14213d",

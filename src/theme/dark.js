@@ -6,7 +6,7 @@ const darkTheme = {
         primary: {
             main: '#eeeeee',
             mainGradient: 'linear-gradient(180deg, #071e26dd 0%, #010b16dd 500px, #03101fdd 100%)',
-            sideGradient: "linear-gradient(90deg, #ffffff4d 0%, #ffffff00 80%);"
+            sideGradient: "linear-gradient(90deg, #ffffff4d 0%, #ffffff00 80%)"
         },
         secondary: {
             main: '#fca311',
@@ -17,6 +17,10 @@ const darkTheme = {
         background: {
             default: '#303030',
             paper: '#424242',
+        },
+        horizontalLine: {
+            left: "linear-gradient(90deg, #eeeeeeff 0%, #eeeeee00 80%)",
+            right: "linear-gradient(270deg, #eeeeeeff 0%, #eeeeee00 80%)",
         },
     },
     typography: {
@@ -35,7 +39,6 @@ const darkTheme = {
             color: "#eeeeee",
             fontSize: "30px",
             fontWeight: "700",
-            marginBottom: "10px",
         },
         h3: {
             color: "#eeeeee",
