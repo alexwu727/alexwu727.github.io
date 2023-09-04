@@ -4,6 +4,8 @@ I had the opportunity to work on a project as a data analyst for a researcher at
 
 I was chiefly responsible for constructing the social network, a massive data amalgamation sourced from three different datasets provided by the Coast Guard Administration.
 
+![social_network](../images/network.png "social network graph")
+
 - **Collaboration and Behavior Analysis**: 
   - Researched the collaboration tendencies and behavior patterns of various groups within the network, including "good people," suspects, and criminals.
   - Utilized vertices' attributes and DID features to further segment and analyze these groups.
