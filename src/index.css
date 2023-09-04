@@ -30,3 +30,10 @@ code {
 .md ul p {
   margin-bottom: 0px;
 }
+
+.md img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}

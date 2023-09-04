@@ -2,6 +2,8 @@ During my internship at Academia Sinica, I served as a software engineer intern 
 
 ## Automating Data Collection with OpenCV and Django
 
+![questionnaire](../images/questionnaire.webp "Logo Title Text 1")
+
 My main mission was to automate the laborious process of collecting data from handwritten questionnaires into a research database.
 
 - **Questionnaire Recognition System**: 
