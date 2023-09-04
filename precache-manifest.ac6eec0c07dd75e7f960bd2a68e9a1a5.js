@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "df32b5633d4d259e497e",
-    "url": "/static/css/main.f96c2780.chunk.css"
+    "revision": "1cf750ce9672cab25cb7",
+    "url": "/static/css/main.b80a972b.chunk.css"
   },
   {
-    "revision": "df32b5633d4d259e497e",
-    "url": "/static/js/main.df32b563.chunk.js"
+    "revision": "1cf750ce9672cab25cb7",
+    "url": "/static/js/main.1cf750ce.chunk.js"
   },
   {
-    "revision": "af558f2f8ed8c32a78d7",
-    "url": "/static/js/1.af558f2f.chunk.js"
+    "revision": "ebf2753d3f4f17be9c5a",
+    "url": "/static/js/1.ebf2753d.chunk.js"
   },
   {
-    "revision": "34b2c0833888895e5fb1",
-    "url": "/static/js/2.34b2c083.chunk.js"
+    "revision": "0ed7e41897a816ea164f",
+    "url": "/static/js/2.0ed7e418.chunk.js"
   },
   {
-    "revision": "87c56687c54ccde31c95",
-    "url": "/static/js/runtime~main.87c56687.js"
+    "revision": "ebe2540476e32e2cf4ed",
+    "url": "/static/js/runtime~main.ebe25404.js"
   },
   {
     "revision": "48380c60710c937d337c7c669a7e5787",
@@ -108,6 +108,10 @@ self.__precacheManifest = [
     "url": "/static/media/academiaSinica.202fa97f.jpg"
   },
   {
+    "revision": "959cedc87e4400fc84b8ac4c71e555ce",
+    "url": "/static/media/aiello.959cedc8.png"
+  },
+  {
     "revision": "d19a78bc712a2a208be46c43fe1cc58e",
     "url": "/static/media/androidStudio.d19a78bc.png"
   },
@@ -144,7 +148,7 @@ self.__precacheManifest = [
     "url": "/static/media/tetraStar.33a90ac2.png"
   },
   {
-    "revision": "311b9afa075de1e0e068128685e1d485",
+    "revision": "369ee546df148d0cabe89fab47c40cf7",
     "url": "/index.html"
   }
 ];
