@@ -45,7 +45,7 @@ function App() {
         <CssBaseline>
           <BrowserRouter>
             <div className="App" style={{ background: theme.palette.primary.mainGradient }}>
-              <Container maxWidth="lg" sx={{ minHeight: "100vh" }}>
+              <Container maxWidth="lg" sx={{ minHeight: "100vh", paddingBottom: "100px" }}>
                 <Routes>
                   <Route path="/" element={<Layout />}>
                     <Route index element={<AboutMe />} />
