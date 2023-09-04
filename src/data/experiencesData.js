@@ -39,7 +39,7 @@ const works = [
         position: 'Software Engineer Intern',
         display: 'Software Engineer Intern at Aiello',
         date: 'January 2021 - March 2021',
-        image: 'images/aiello.jpeg',
+        image: 'images/aiello.png',
         tech: 'Java, Vert.x, Apache Kafka',
         markdown: 'aiello.md',
         description: 'During my internship at Aiello Ai, I worked to improve the company\'s API infrastructure.',
