@@ -48,7 +48,8 @@ const Project = () => {
                     <IconButton
                         component={MuiLink}
                         href={project.url}
-                        width='32px'
+                        width='50px'
+                        height='50px'
                     >
                         <img src={githubLogo} width='100%' alt='github logo' />
                     </IconButton>
