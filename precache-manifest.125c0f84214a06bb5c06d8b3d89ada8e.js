@@ -148,7 +148,7 @@ self.__precacheManifest = [
     "url": "/static/media/tetraStar.33a90ac2.png"
   },
   {
-    "revision": "497488e85e734926184ebe4efc63bfa1",
+    "revision": "4e4172ebf0ab805ef7f53f876aed9327",
     "url": "/index.html"
   }
 ];
